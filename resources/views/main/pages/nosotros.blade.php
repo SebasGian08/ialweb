@@ -96,7 +96,7 @@
                     <div class="linea-izquierda" style="margin-top:-30px;"></div>
                     <p style="color:white">Como corporación, podemos afirmar que, a lo largo de todos estos años,
                         nos respalda nuestra base educativa de calidad y alta experiencia en el
-                        sector salud; donde continuamente venimos mejorando día tras día desde hace 45 años. </p>
+                        sector salud; donde continuamente venimos mejorando día tras día desde hace 47 años. </p>
                     <div class="items">
                         <div class="item">
                             <a href="#"><img src="{{ asset('main/image/nosotros1.png') }}" alt="Item 1"></a>
