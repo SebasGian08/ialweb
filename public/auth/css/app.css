@@ -1,0 +1,30 @@
+#gritter-notice-wrapper{z-index: 99999999 !important}
+.gritter-item-wrapper.bg-danger p, .gritter-item-wrapper.bg-danger a,
+.gritter-item-wrapper.bg-success p, .gritter-item-wrapper.bg-success a,
+.gritter-item-wrapper.bg-warning p, .gritter-item-wrapper.bg-warning a
+{ color: white !important; }
+.kv-file-remove{ display: none}
+.bold{font-weight: bold;}
+p, li{font-size: 14px}
+.circle-border{ border: 3px solid #348fe2;}
+span[data-valmsg-for]{color: #e31212;font-weight: bold;}
+.modal-dialog-centered::before{display: block;height: calc(100vh - 1rem);height: -moz-min-content;height: min-content;content: "";}
+.swal2-html-container{font-size: 15px;font-weight: 600;}
+.refresh-app-loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999999999999;
+    height: 100vh;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hidden{display: none}
+
+table.dataTable th, table.dataTable td {padding: 3px 10px;}
+input[readonly]{ background-color: #e9ecef !important; outline: 0 !important;}

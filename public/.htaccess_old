@@ -1,0 +1,36 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^ial.edu.pe [NC]
+RewriteRule ^(.*)$ https://www.ial.edu.pe/$1 [L,R=301,NC]
+
+
+Redirect 302 /landing_cursos/  /cursos/
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^curso/?$ curso.php [L,NC,QSA]
+RewriteRule ^virtuales/(.*)$ curso_virtual.php?value=$1 [L]
+RewriteRule ^presenciales/(.*)$ curso_presencial.php?value=$1 [L]
+RewriteRule ^semipresenciales/(.*)$ curso_semipresencial.php?value=$1 [L]
+
+RewriteRule ^historia/?$ historia.php [L,NC,QSA]
+RewriteRule ^eventos/?$ eventos.php [L,NC,QSA]
+
+RewriteRule ^carrera/(.*)$ carrera.php?value=$1 [L]
+
+RewriteRule ^virtual/?$ virtual.php [L,NC,QSA]
+RewriteRule ^presencial/?$ presencial.php [L,NC,QSA]
+RewriteRule ^semipresencial/?$ semipresencial.php [L,NC,QSA]
+
+
+
+RewriteRule ^convenios/?$ convenios.php [L,NC,QSA]
+
+RewriteRule ^admision/?$ admision.php [L,NC,QSA]
+RewriteRule ^reingreso/?$ reingreso.php [L,NC,QSA]
+RewriteRule ^traslado/?$ traslado.php [L,NC,QSA]
+RewriteRule ^titulo/?$ titulo.php [L,NC,QSA]
+
+RewriteRule ^contactenos/?$ contactenos.php [L,NC,QSA]

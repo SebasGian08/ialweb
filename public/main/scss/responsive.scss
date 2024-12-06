@@ -1,0 +1,473 @@
+@media(max-width: 1190px)
+{
+
+}
+
+@media(min-width: 992px){
+    .navigation-links{
+        display: none;
+    }
+}
+
+@media(max-width: 992px)
+{
+    header {
+        .nav-links{
+            padding: 5px 0;
+            ul{
+                display: none;
+            }
+        }
+        .navigation{
+            .navs{
+                display: none;
+            }
+            .container{
+                display: flex;
+                justify-content: space-between;
+
+                .logo{
+                    img{
+                        width: 150px;
+                    }
+                }
+                .button-action{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    main {
+        section{
+            padding: 10px 0 !important;
+        }
+    }
+
+    #experiencias-marcas {
+        margin: 0 !important;
+        .info-content{
+            grid-template-columns: 1fr !important;
+            img{
+                width: 100% !important;
+                margin-bottom: 20px !important;
+            }
+            h3{
+                font-size: 30px !important;
+                margin-top: 20px;
+                margin-bottom: 0 !important;
+                text-align: center;
+            }
+            p{
+                text-align: center !important;
+            }
+        }
+    }
+
+    #formacion-academica{
+        .info-text{
+            width: auto !important;
+            ul{
+                display: block !important;
+                li{
+                    margin: 20px 0 !important;
+                    a{
+                        display: block;
+                        width: 100%;
+                        margin: 0 !important;
+                        padding: 5px 0 !important;
+                    }
+                }
+            }
+        }
+        .gallery{
+            position: relative;
+            overflow-x: scroll;
+            width: 100%;
+            display: -webkit-inline-box !important;
+            .item{
+                width: 180px !important;
+            }
+        }
+    }
+
+    #compromiso-excelencia {
+        .info-content {
+            display: block !important;
+            .info-text{
+                width: auto !important;
+                margin: 0 auto 0 auto !important;
+            }
+            .info-image{
+                top: 0 !important;
+                .person{
+                    width: 100%;
+                }
+            }
+        }
+        .info-content-pilar{
+            .info-grid-pilar {
+                grid-template-columns: 1fr !important;
+                padding: 0px 0 40px 0 !important;
+                .item-pilar{
+                    display: block !important;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    #experiencias-testimonios{
+        .info-content{
+            padding: 60px 0 0 0 !important;
+            .container{
+                grid-template-columns: 1fr !important;
+                gap: 1rem !important;
+                .info-content-info{
+                    text-align: center !important;
+                }
+                .item{
+                    flex-direction: column;
+                    gap: 1rem !important;
+                    .item-image{
+                        order: 2;
+                        margin: 0 auto;
+                    }
+                    .item-content{
+                        order: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    #centro-estudio {
+        .info-center {
+            grid-template-columns: 1fr !important;
+        }
+        .info-list-center{
+            padding: 20px !important;
+            height: auto !important;
+            max-height: 600px !important;
+        }
+        .info-list-image{
+            display: none;
+        }
+    }
+
+    #mision-vision{
+        .info-content{
+            grid-template-columns: 1fr !important;
+            gap: 1rem !important;
+        }
+        .item-header{
+            display: block !important;
+            text-align: center !important;
+        }
+    }
+
+    #nuestros-pilares{
+        .items{
+            grid-template-columns: 1fr !important;
+            gap: 1rem !important;
+        }
+    }
+
+    #experiencias-marcas {
+        .info-content {
+            .items{
+                grid-template-columns: 1fr !important;
+            }
+        }
+        img{
+            &.icon{
+                width: 40px !important;
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+
+    #experiencias-diferencia {
+        .info-content{
+            grid-template-columns: 1fr !important;
+            gap: 0rem !important;
+            .items{
+                width: 305px !important;
+            }
+        }
+
+        .item-carousel {
+            background: url(../image/Group_835.png) !important;
+            height: 420px;
+            padding: 20px 0 !important;
+            background-size: 360px !important;
+            background-repeat: no-repeat !important;
+            .item{
+                padding: 0 !important;
+                width: 80%;
+                margin: 0 auto;
+                h5{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    #carrera-informacion{
+        .container{
+            grid-template-columns: 1fr !important;
+            gap: 1rem !important;
+        }
+        .form-container{
+            width: 100% !important;
+            padding: 20px 5px !important;
+        }
+    }
+
+    #tus-datos{
+        a{
+            margin-top: 15px;
+        }
+    }
+
+    #desarolla-habilidades{
+        .info-content{
+            display: block !important;
+            .items{
+                grid-template-columns: 1fr !important;
+                gap: 2rem !important;
+                margin-top: 40px !important;
+            }
+        }
+        .info-image{
+            img{
+                width: 100% !important;
+            }
+        }
+
+        .item-video {
+            font-size: 29px !important;
+
+            iframe{
+                width: 100% !important;
+            }
+        }
+    }
+
+    #brochure {
+        .info-content {
+            .info-content-text{
+                display: block !important;
+                width: 80% !important;
+            }
+        }
+    }
+
+    #oportunidades {
+        .info-content{
+            grid-template-columns: 1fr !important;
+            gap: 1rem !important;
+        }
+    }
+
+    #malla-curricular {
+        .info-text ul{
+            flex-wrap: wrap;
+            li a{
+                margin: 5px 0 !important;
+            }
+        }
+        .info-content{
+            padding: 20px 15px 20px 15px !important;
+            .items{
+                grid-template-columns: 1fr !important
+            }
+        }
+    }
+
+   #portada, #alianzas-estrategicas, #experiencias-testimonios, #actualidad-loayza{
+        .owl-dots{
+            display: flex !important;
+        }
+    }
+
+    #portada, #alianzas-estrategicas, #actualidad-loayza{
+        .owl-dots{
+           top: 0 !important;
+        }
+    }
+
+    #portada {
+        .owl-dots{
+            margin-top: 0 !important;
+        }
+    }
+
+    #experiencias-testimonios{
+        .owl-nav{
+            display: flex !important;  
+        }
+    }
+
+    #actualidad-loayza{
+        .owl-nav{
+            display: none !important;
+        }
+    }
+
+    #contacto {
+        .form-container{
+            width: auto !important;
+            padding: 20px 10px !important;
+            margin: 60px auto 60px auto !important;
+            form .item{
+                display: contents !important;
+                select, input[type=email], input[type=text]{
+                     margin-right: 0px;
+                }
+            }
+        }
+    }
+
+    #todos{
+        grid-template-columns: 1fr !important;
+    }
+
+    .container{
+        padding: 0 15px;
+    }
+
+    footer {
+        hr{
+            margin: 40px 0 20px 0;
+        }
+        .contact-networks-content{
+            grid-template-columns: 1fr !important;
+            gap: 0.5rem !important;
+        }
+
+        .contact-content .contact-content-info{
+            display: block;
+        }
+
+        .footer-bottom{
+            display: grid !important;
+            justify-content: center !important;
+            gap: 1rem !important;
+            text-align: center !important;
+        }
+    }
+
+    .menu-mobile-navigation{
+        display: block;
+        .btn-navigation{
+            background: rgba(0, 0, 0, 0);
+            border: none;
+            outline: 0;
+            padding: 0;
+            font-size: 20px;
+        }
+    }
+
+    .navigation-mobile-panel{
+        width: auto;
+        height: 1200vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #00c9fa;
+        z-index: -1;
+        padding: 90px 20px 0 20px;
+        ul{
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-flow: column;
+            gap: 1.5rem;
+            li{
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    font-family: "GothamRoundedMedium";
+                    display: flex;
+                    align-items: center;
+                    span{
+                        font-size: 10px;
+                        margin-right: 5px;
+                    }
+                    &.active{
+                        color: #0746b3;
+                    }
+                }
+                &.submenu{
+                    i{
+                        margin-left: 20px;
+                    }
+                    ul{
+                        display: none;
+                    }
+
+                    img{
+                        width: 30px;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+        hr{
+            background: #fff;
+            width: 100%;
+        }
+
+        .submenu:hover{
+            a.nav-link{
+                color: #0746b3;      
+            }
+            ul.navigation-links{
+                display: flex;
+                gap: 0.5rem;
+                padding: 20px 0 10px 0;
+            }
+        }
+
+
+        .navigation-buttons{
+            width: 250px;
+            margin: 0 auto;
+            li{
+                a{
+                    width: 100%;
+                    font-family: "poppins-Medium";
+                    background-color: #ff7f00;
+                    color: #fff;
+                    padding: 10px 0px;
+                    text-align: center;
+                    text-decoration: none;
+                    border-radius: 15px;
+                    font-size: 16px;
+                    box-shadow: 10px 10px 10px rgba(32, 27, 27, .233);
+                    justify-content: center;
+                    img{
+                        margin-left: 20px;
+                    }
+
+                    &.button-contact{
+                        background-color: transparent !important;  
+                        border: 2px solid #fff;   
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px)
+{
+
+}
+
+@media(max-width: 485px)
+{
+
+}
