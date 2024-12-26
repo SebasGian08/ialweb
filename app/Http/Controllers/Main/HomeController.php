@@ -181,6 +181,10 @@ class HomeController extends Controller
         ]);
     }
 
+    public function transparencia(){
+        return view('main.pages.transparencia');
+    }
+
     /* API NO TOCAR */
     public function registrar(Request $request)
     {

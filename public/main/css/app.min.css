@@ -1023,7 +1023,7 @@ main #desarolla-habilidades {
 
 main #desarolla-habilidades .info-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: start;
     gap: 5rem
 }
@@ -1158,9 +1158,10 @@ main #desarolla-habilidades .info-content .item-video h5 {
 }
 
 main #brochure .info-content {
-    background-color: #00c9fa;
-    border-radius: 25px
-}
+    background-color: #ffffff;
+    border: 1px solid #0746b3;
+    border-radius: 25px;
+  }
 
 main #brochure .info-content .info-content-text {
     display: flex;
@@ -1183,9 +1184,9 @@ main #brochure .info-content .info-content-text a {
     display: flex;
     padding: 18px 20px;
     font-family: "GothamRoundedMedium";
-    color: #f7f8f9;
-    border: 2px solid #f7f8f9;
-    background-color: rgba(0, 0, 0, 0);
+    color: #0746b3;
+    border: 2px solid #0746b3;
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 15px;
     align-items: center;
     justify-content: center;

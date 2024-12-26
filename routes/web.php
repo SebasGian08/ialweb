@@ -39,6 +39,7 @@ Route::get('contacto', [Main\HomeController::class, 'contacto'])->name('contacto
 Route::get('reingreso', [Main\HomeController::class, 'reingreso'])->name('reingreso');
 Route::get('traslado', [Main\HomeController::class, 'traslado'])->name('traslado');
 Route::get('librodereclamaciones', [Main\HomeController::class, 'librodereclamaciones'])->name('librodereclamaciones');
+Route::get('transparencia', [Main\HomeController::class, 'transparencia'])->name('transparencia');
 //Route::get('sobre-nosotros', [Main\HomeController::class, 'index'])->name('index');
 
 /* PARA GUARDAR API EN CRM VENTAS */
@@ -198,6 +199,7 @@ Route::prefix('auth')->group(function () {
                     Route::post('delete', [Auth\ReclamacionesController::class, 'delete'])->name('delete'); */
                 });
             });
+           
 
         });
 

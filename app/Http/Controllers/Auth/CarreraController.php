@@ -71,6 +71,7 @@ class CarreraController extends Controller
                     'brochure_path' => $brochure_path != null ? $brochure_path : $request->brochure_path,
                     'oportunidades_profesionales' => $request->oportunidades_profesionales != null ? json_encode($request->oportunidades_profesionales) : null,
                     'perfil_egresado' => $request->perfil_egresado != null ? json_encode($request->perfil_egresado) : null,
+                    'certificaciones' => $request->certificaciones != null ? json_encode($request->certificaciones) : null,
                     'turno' => $request->turno != null ? json_encode($request->turno) : null,
                     'modalidad' => $request->modalidad != null ? json_encode($request->modalidad) : null
                 ]);

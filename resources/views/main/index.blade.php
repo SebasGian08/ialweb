@@ -24,7 +24,7 @@
                     <li><a href="https://loayzavirtual.edu.pe/acces/" target="_blank">Aula virtual</a></li>
                     <li><a href="https://elibro.net/es/lc/biblioloayza/" target="_blank">Biblioteca Virtual</a></li>
                     <li><a href="https://bolsadetrabajo.ial.edu.pe/" target="_blank">Bolsa de Trabajo</a></li>
-                    <li><a href="#">Transparencia</a></li>
+                    <li><a href="{{ route('transparencia') }}">Transparencia</a></li>
                 </ul>
             </div>
         </div>
@@ -52,7 +52,7 @@
                                     <ul class="sub-menu">
                                         <li>
                                             <div class="item-menu">
-                                                <img src="{{ asset('main/image/icon-menu.png') }}" width="90"
+                                                <img src="{{ asset('main/image/iconocarrera.png') }}" width="90"
                                                     alt="Formación Continua">
                                                 <h5>Carreras</h5>
                                                 <ul>
@@ -73,15 +73,14 @@
                                                             Programas </a></li>
                                                     <li><a href="{{ route('cursos', ['slug' => 'cursos']) }}"> >>
                                                             Cursos</a></li>
-                                                    <li><a
-                                                            href="{{ route('cursos', ['slug' => 'talleres']) }}">
+                                                    <li><a href="{{ route('cursos', ['slug' => 'talleres']) }}">
                                                             >> Talleres</a></li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="item-menu">
-                                                <img src="{{ asset('main/image/icon-menu.png') }}" width="90"
+                                                <img src="{{ asset('main/image/idioma.png') }}" width="90"
                                                     alt="Formación Continua">
                                                 <h5>Idiomas</h5>
                                                 <ul>
@@ -158,9 +157,12 @@
                                     alt="Formación continua">
                                 Formación continua <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                             <ul class="navigation-links">
-                                <li><a href="{{ route('cursos', ['slug' => 'programas']) }}"><span>>></span> Programas</a></li>
-                                <li><a href="{{ route('cursos', ['slug' => 'cursos']) }}"><span>>></span> Cursos</a></li>
-                                <li><a href="{{ route('cursos', ['slug' => 'talleres']) }}"><span>>></span> Talleres</a></li>
+                                <li><a href="{{ route('cursos', ['slug' => 'programas']) }}"><span>>></span>
+                                        Programas</a></li>
+                                <li><a href="{{ route('cursos', ['slug' => 'cursos']) }}"><span>>></span> Cursos</a>
+                                </li>
+                                <li><a href="{{ route('cursos', ['slug' => 'talleres']) }}"><span>>></span>
+                                        Talleres</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
@@ -182,7 +184,7 @@
                                 Idiomas <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                             <ul class="navigation-links">
                                 <li><a href="{{ route('idioma', ['slug' => 'ingles']) }}"> >>
-                                    Inglés</a></li>
+                                        Inglés</a></li>
                                 {{-- <li><a href="#"> <span>>></span> Frances</a></li> --}}
                             </ul>
                         </li>
@@ -230,14 +232,59 @@
         @yield('content')
 
         <div class="wsp-icon">
+            <div class="help-text"
+                style="position: absolute; left: -225px; top: 50%; transform: translateY(-50%); font-size: 14px; background-color: #40c351; padding: 8px 12px; border-radius: 15px 15px 0 15px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+                <span class="typing-effect"
+                    style="font-family: 'GothamRoundedLight'; font-size: 16px; color: #ffffff;"><i
+                        class="fa fa-comment"></i> <i class="fa fa-comment-alt"></i> ¿Podemos ayudarte?</span>
+            </div>
             <a href="https://api.whatsapp.com/send?phone={{ $Configuration->whatsapp }}&text=%C2%A1Hola!%20Quisiera%20más%20información."
                 target="_blank">
                 <img src="{{ asset('main/image/wsp.png') }}" alt="Whatsapp">
             </a>
-            <div class="notification-circle" style="position: absolute; top: -5px; right: -5px; width: 20px; height: 20px; background-color: red; color: white; border-radius: 50%; font-size: 12px; text-align: center; line-height: 20px;">
+            <div class="notification-circle"
+                style="position: absolute; top: -5px; right: -5px; width: 20px; height: 20px; background-color: red; color: white; border-radius: 50%; font-size: 12px; text-align: center; line-height: 20px;">
                 1
             </div>
         </div>
+
+        <style>
+            .typing-effect {
+                display: inline-block;
+                overflow: hidden;
+                white-space: nowrap;
+                border-right: 2px solid #ffffff;
+                /* Cursor */
+                animation: typing 8s steps(30, end) infinite, blink 0.6s step-end infinite;
+            }
+
+            /* Efecto de escribir y borrar con pausa */
+            @keyframes typing {
+                0% {
+                    width: 0;
+                }
+
+                50% {
+                    width: 100%;
+                }
+
+                60% {
+                    width: 100%;
+                    /* Pausa durante 5 segundos */
+                }
+
+                100% {
+                    width: 0;
+                }
+            }
+
+            /* Efecto de parpadeo del cursor */
+            @keyframes blink {
+                50% {
+                    border-color: transparent;
+                }
+            }
+        </style>
     </main>
 
     <footer class="footer">
@@ -268,8 +315,10 @@
                         <div class="linea-izquierda"></div>
                         <ul>
                             <li><a href="https://loayzavirtual.edu.pe/acces/" target="_blank">>> Aula Virtual</a></li>
-                            <li><a href="https://elibro.net/es/lc/biblioloayza/inicio" target="_blank">>> Biblioteca Virtual</a></li>
-                            <li><a href="https://bolsadetrabajo.ial.edu.pe/" target="_blank">>> Bolsa de Trabajo </a></li>
+                            <li><a href="https://elibro.net/es/lc/biblioloayza/inicio" target="_blank">>> Biblioteca
+                                    Virtual</a></li>
+                            <li><a href="https://bolsadetrabajo.ial.edu.pe/" target="_blank">>> Bolsa de Trabajo </a>
+                            </li>
                         </ul>
                     </div>
 
@@ -286,7 +335,30 @@
             </div>
             <div class="footer-bottom">
                 <div>
-                    <a href="{{ route('librodereclamaciones') }}"><img src="{{ asset('main/image/libro-reclamaciones.png') }}" alt="" style="border-radius:20px;widt:160px"></a>
+                    <a href="{{ route('librodereclamaciones') }}"><img
+                            src="{{ asset('main/image/libro-reclamaciones.png') }}" alt=""
+                            style="border-radius:20px;widt:160px"></a>
+                            <h3 style="color:white;"><span class="highlight">Licenciados <i class="fa fa-star" aria-hidden="true"></i></span><br> POR MINEDU</h3>
+                    <style>
+                        h3 {
+                            font-size: 14px;
+                            /* Ajusta según el diseño */
+                            line-height: 1.5;
+                        }
+
+                        .highlight {
+                            background-color: white;
+                            color: #0746b3;
+                            position: relative;
+                            padding: 0 10px;
+                            /* Espaciado interno */
+                            border-radius: 15px 15px 15px 0;
+                            /* Bordes circulares en el lado derecho */
+                            border-left: none;
+                            /* Sin borde en el lado izquierdo */
+                            display: inline-block;
+                        }
+                    </style>
                 </div>
                 <div>
                     <h5><i class="fa fa-phone"></i> Contacto</h5>
@@ -324,7 +396,8 @@
                 <div class="footer-logo">
                     <img src="{{ asset('main/image/logo-ial-blanco.png') }}" alt="{{ env('APP_NAME') }}" />
                 </div>
-                <div style="color:white;">&copy; IAL {{ \Carbon\Carbon::now()->year }}, All Rights Reserved. Desarrollado por Instituto Arzobispo Loayza</div>
+                <div style="color:white;">&copy; IAL {{ \Carbon\Carbon::now()->year }}, All Rights Reserved.
+                    Desarrollado por Instituto Arzobispo Loayza</div>
                 <div><a href="#">Políticas de privacidad</a></div>
                 {{-- <div><a href="#">Libro de reclamaciones</a></div> --}}
             </div>

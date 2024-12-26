@@ -8,7 +8,7 @@
 @endsection
 
 @section('content')
-   {{--  <section id="portada" class="main-banner">
+    {{--  <section id="portada" class="main-banner">
         <div class="container-fluid">
             <div class="owl-carousel owl-banner">
                 <div class="item">
@@ -97,7 +97,82 @@
                     <p style="color:white">Como corporación, podemos afirmar que, a lo largo de todos estos años,
                         nos respalda nuestra base educativa de calidad y alta experiencia en el
                         sector salud; donde continuamente venimos mejorando día tras día desde hace 47 años. </p>
-                    <div class="items">
+                    <div class="items-wrapper">
+                        <div class="arrow left-arrow" onclick="moveLeft()">&#10094;</div>
+                        <div class="items">
+                            <div class="item">
+                                <a href="#"><img src="{{ asset('main/image/nosotros1.png') }}" alt="Item 1"></a>
+                            </div>
+                            <div class="item">
+                                <a href="#"><img src="{{ asset('main/image/nosotros2.png') }}" alt="Item 2"></a>
+                            </div>
+                            <div class="item">
+                                <a href="#"><img src="{{ asset('main/image/nosotros3.png') }}" alt="Item 3"></a>
+                            </div>
+                            <div class="item">
+                                <a href="#"><img src="{{ asset('main/image/nosotros4.png') }}" alt="Item 1"></a>
+                            </div>
+                        </div>
+                        <div class="arrow right-arrow" onclick="moveRight()">&#10095;</div>
+                    </div>
+
+                    <style>
+                        .items-wrapper {
+                            display: flex;
+                            position: relative;
+                            width: 560px;
+                            margin: 60px 0 20px 0;
+                        }
+
+                        .items {
+                            display: flex;
+                            overflow-x: hidden !important;
+                            gap: 2rem;
+                        }
+
+                        .item {
+                            flex: none;
+                        }
+
+                        .arrow {
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            background-color: rgba(0, 0, 0, 0.5);
+                            color: white;
+                            font-size: 2rem;
+                            padding: 10px;
+                            cursor: pointer;
+                            z-index: 1;
+                        }
+
+                        .left-arrow {
+                            left: 0;
+                        }
+
+                        .right-arrow {
+                            right: 0;
+                        }
+                    </style>
+                    <script>
+                        function moveLeft() {
+                            const itemsContainer = document.querySelector('.items');
+                            itemsContainer.scrollBy({
+                                left: -200,
+                                behavior: 'smooth'
+                            });
+                        }
+
+                        function moveRight() {
+                            const itemsContainer = document.querySelector('.items');
+                            itemsContainer.scrollBy({
+                                left: 200,
+                                behavior: 'smooth'
+                            });
+                        }
+                    </script>
+
+                    {{-- <div class="items">
                         <div class="item">
                             <a href="#"><img src="{{ asset('main/image/nosotros1.png') }}" alt="Item 1"></a>
                         </div>
@@ -110,7 +185,7 @@
                         <div class="item">
                             <a href="#"><img src="{{ asset('main/image/nosotros4.png') }}" alt="Item 1"></a>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

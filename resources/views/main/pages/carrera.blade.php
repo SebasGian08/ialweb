@@ -32,12 +32,13 @@
         <div class="container">
             <div>
                 <h3><?php echo $Model->nombre_dos_lineas; ?></h3>
+                <div class="linea-izquierda"></div>
                 <p>{{ $Model->descripcion }}</p>
                 <?php echo $Model->informacion; ?>
                 <div class="info-items">
                     <div>
                         <div class="info-item-content">
-                            @if ($Model->fecha_inicio != null)
+                            {{-- @if ($Model->fecha_inicio != null)
                                 <div class="info-item">
                                     <div class="info-item-image">
                                         <img src="{{ asset('main/image/relojarenarojo.png') }}" alt=""
@@ -48,7 +49,7 @@
                                         <p>{{ \Carbon\Carbon::parse($Model->fecha_inicio)->format('d/m/Y') }}</p>
                                     </div>
                                 </div>
-                            @endif
+                            @endif --}}
                             @if ($Model->duracion != null)
                                 <div class="info-item">
                                     <div class="info-item-image">
@@ -130,7 +131,11 @@
         </div>
     </section>
 
-    <section id="desarolla-habilidades">
+    <section id="desarolla-habilidades"
+        style="background-image: url(https://www.ial.edu.pe/web_loayza/assets/img/imgactualizado/fondohabilidades.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;">
         <div class="container">
             <div class="info-content">
                 <div>
@@ -142,7 +147,27 @@
                     @endif
                 </div>
                 <div class="info-text">
-                    <h3>Desarrolla las <br> siguientes habilidades</h3>
+                    <h3>¿Por qué estudiar <br> en <span class="highlight">Loayza</span>?</h3>
+                    <style>
+                        h3 {
+                            font-size: 24px;
+                            /* Ajusta según el diseño */
+                            line-height: 1.5;
+                        }
+
+                        .highlight {
+                            background-color: white;
+                            color: #0746b3;
+                            position: relative;
+                            padding: 0 10px;
+                            /* Espaciado interno */
+                            border-radius: 15px 15px 15px 0;
+                            /* Bordes circulares en el lado derecho */
+                            border-left: none;
+                            /* Sin borde en el lado izquierdo */
+                            display: inline-block;
+                        }
+                    </style>
                     <div class="items">
                         @foreach ($Model->habilidades as $item)
                             <div class="item">
@@ -158,7 +183,7 @@
                 </div>
             </div>
             <div class="info-content content-two">
-                <div class="items-goals">
+                {{-- <div class="items-goals">
                     <h5>Beneficios que <br> brindamos</h5>
                     <div class="items-goals-list">
                         @foreach ($Model->beneficios as $item)
@@ -173,18 +198,20 @@
                             </div>
                         @endforeach
                     </div>
-                </div>
+                </div> --}}
+                {{-- falta centrar --}}
                 <div class="item-video">
-                    <h5>Esta carrera es para ti</h5>
+                    <h5>¡Esta carrera es <span class="highlight">para ti!</span></h5>
+                    <div class="linea" style="margin-top: -30px !important;"></div><br>
                     @if ($Model->video_beneficios != null)
                         <iframe src="{{ str_replace('watch?v=', 'embed/', $Model->video_beneficios) }}" frameBorder="0"
-                            width="745" height="407"></iframe>
+                            width="745" height="407" style="border-radius:20px;"></iframe>
                     @endif
                 </div>
             </div>
         </div>
     </section>
-    @if (count($MallaCurricular) > 0)
+    {{-- @if (count($MallaCurricular) > 0)
         <section id="malla-curricular">
             <div class="container">
                 <div class="info-text">
@@ -208,15 +235,11 @@
                                 </div>
                             @endforeach
                         </div>
-                        <!--<div class="certificate">
-                                   CERTIFICADO: PROMOCIÓN DE LA SALUD.
-                               </div>-->
                     </div>
                 @endforeach
-
             </div>
         </section>
-    @endif
+    @endif --}}
 
 
     @if ($Model->brochure != null)
@@ -225,10 +248,11 @@
                 <div class="info-content">
                     <div class="info-content-text">
                         <div>
-                            <h3>Conoce más sobre <br> la carrera</h3>
-                        </div>
+                            <h3 style="color:#0746b3">Plan de <span class="highlight"
+                                    style="background: #0746b3 !important;color:white !important">estudio</span></h3>
+                        </div><br>
                         <div>
-                            <a href="{{ asset($Model->brochure) }}" download>Brochure <img
+                            <a href="{{ asset($Model->brochure) }}" download>Descargar aquí <img
                                     src="{{ asset('main/image/Group_747_down.png') }}" width="20"
                                     alt="Down"></a>
                         </div>
@@ -243,10 +267,15 @@
             <div class="info-content">
                 @if ($Model->oportunidades_profesionales != null && count($Model->oportunidades_profesionales) > 0)
                     <div class="item">
-                        <div class="item-header">
-                            <img src="{{ asset('main/image/maletin.png') }}" alt="Maletín">
-                            <h5>Oportunidades <br> Profesionales</h5>
+                        <div class="item-header" style="display: flex; align-items: center; text-align: left;">
+                            <img src="{{ asset('main/image/maletin.png') }}" alt="Maletín"
+                                style="margin-right: 10px;width:90px;">
+                            <div>
+                                <h5 style="margin: 0;text-align:left">Campo <br> Laboral</h5>
+                                <div class="linea-izquierda"></div>
+                            </div>
                         </div>
+                        <br><br>
                         <ul>
                             @foreach ($Model->oportunidades_profesionales as $item)
                                 <li>{{ $item }}</li>
@@ -254,14 +283,19 @@
                         </ul>
                     </div>
                 @endif
-                @if ($Model->perfil_egresado != null && count($Model->perfil_egresado) > 0)
+                @if ($Model->certificaciones != null && count($Model->certificaciones) > 0)
                     <div class="item">
-                        <div class="item-header">
-                            <img src="{{ asset('main/image/icon-enfermera-rojo.png') }}" alt="Enfermera">
-                            <h5>Perfil del <br> egresado</h5>
+                        <div class="item-header" style="display: flex; align-items: center; text-align: left;">
+                            <img src="{{ asset('main/image/icon-enfermera-rojo.png') }}" alt="Maletín"
+                                style="margin-right: 10px;width:90px;">
+                            <div>
+                                <h5 style="margin: 0;text-align:left">Certificaciones <br> Modulares</h5>
+                                <div class="linea-izquierda"></div>
+                            </div>
                         </div>
+                        <br><br>
                         <ul>
-                            @foreach ($Model->perfil_egresado as $item)
+                            @foreach ($Model->certificaciones as $item)
                                 <li>{{ $item }}</li>
                             @endforeach
                         </ul>

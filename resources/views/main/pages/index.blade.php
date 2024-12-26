@@ -141,9 +141,20 @@
             <div class="info-content">
                 <div class="container">
                     <div class="info-content-info">
-                        <h3 style="color : white;">Experiencias que <br> marcan la diferencia</h3>
-                        <div class="linea-izquierda" style="margin-top:-20px"></div>
+                        <h3 style="color: white;">Experiencias que <br>forjan el futuro</h3>
+                        <div class="linea-izquierda" style="margin-top: -20px;"></div>
+                        <br>
+                        <p style="text-align: justify;
+                        font-family: 'poppins-Regular';
+                        font-size: 14px;
+                        color: #0746b3;">
+                            En Loyza, cada lección no solo es conocimiento, sino una oportunidad para crecer,
+                            aprender y transformar el futuro. Vivir experiencias académicas que van más allá de los libros,
+                            formando jóvenes preparados para enfrentar los retos del mañana. Aquí, cada estudiante es parte
+                            de un camino hacia el éxito.
+                        </p>
                     </div>
+
                     <div class="items">
                         <div class="owl-carousel owl-testimonial">
                             @foreach ($Testimonios as $item)

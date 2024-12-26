@@ -10,7 +10,7 @@ class Carrera extends Model
 {
     use SoftDeletes;
     protected $fillable = ['imagen_path', 'portada_path', 'nombre', 'slug', 'descripcion', 'informacion', 'fecha_inicio', 'duracion', 'turno', 'modalidad',
-        'brochure_path', 'imagen_habilidad_path', 'video_beneficios', 'oportunidades_profesionales', 'perfil_egresado'];
+        'brochure_path', 'imagen_habilidad_path', 'video_beneficios', 'oportunidades_profesionales', 'perfil_egresado', 'certificaciones'];
     protected $appends = ['imagen', 'imagen_habilidad', 'brochure', 'portada', 'fecha_registro', 'nombre_dos_lineas'];
     protected $dates = ['deleted_at'];
 
@@ -43,6 +43,10 @@ class Carrera extends Model
         return $value != null ? json_decode($value) : null;
     }
     public function getPerfilEgresadoAttribute($value)
+    {
+        return $value != null ? json_decode($value) : null;
+    }
+    public function getCertificacionesAttribute($value)
     {
         return $value != null ? json_decode($value) : null;
     }
