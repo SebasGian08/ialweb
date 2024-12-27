@@ -22,11 +22,18 @@
             </div>
             <div class="menu-header">Principal</div>
             <div class="menu-item">
+                <a href="{{ route('index') }}" target="_blank" class="menu-link">
+                    <div class="menu-icon"><i class="fa fa-home"></i></div>
+                    <div class="menu-text">Página Web</div>
+                </a>
+            </div>
+            <div class="menu-item">
                 <a href="{{ route('auth.dashboard.index') }}" class="menu-link">
                     <div class="menu-icon"><i class="fa fa-dashboard"></i></div>
                     <div class="menu-text">Dashboard</div>
                 </a>
             </div>
+            
             <div class="menu-item">
                 <a href="{{ route('auth.carrera.index') }}" class="menu-link">
                     <div class="menu-icon"><i class="fa fa-user-graduate"></i></div>

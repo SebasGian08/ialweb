@@ -53,7 +53,7 @@
                                         <li>
                                             <div class="item-menu">
                                                 <img src="{{ asset('main/image/iconocarrera.png') }}" width="90"
-                                                    alt="Formación Continua">
+                                                    alt="Carreras">
                                                 <h5>Carreras</h5>
                                                 <ul>
                                                     @foreach ($Carreras as $item)
@@ -153,6 +153,19 @@
                     <ul class="navigation-links">
                         <li class="submenu">
                             <a href="javascript:void(0)" class="nav-link">
+                                <img src="{{ asset('main/image/icon-programas.png') }}" width="20px"
+                                    alt="Programas">
+                                Carreras <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                            <ul class="navigation-links">
+                                @foreach ($Carreras as $item)
+                                    <li><a
+                                            href="{{ route('carrera', ['slug' => $item->slug]) }}">{{ $item->nombre }}</a>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="javascript:void(0)" class="nav-link">
                                 <img src="{{ asset('main/image/icon-informacion.png') }}" width="20px"
                                     alt="Formación continua">
                                 Formación continua <i class="fa fa-caret-down" aria-hidden="true"></i></a>
@@ -165,19 +178,7 @@
                                         Talleres</a></li>
                             </ul>
                         </li>
-                        <li class="submenu">
-                            <a href="javascript:void(0)" class="nav-link">
-                                <img src="{{ asset('main/image/icon-programas.png') }}" width="20px"
-                                    alt="Programas">
-                                Programas <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                            <ul class="navigation-links">
-                                @foreach ($Carreras as $item)
-                                    <li><a
-                                            href="{{ route('carrera', ['slug' => $item->slug]) }}">{{ $item->nombre }}</a>
-                                    </li>
-                                @endforeach
-                            </ul>
-                        </li>
+                        
                         <li class="submenu">
                             <a href="javascript:void(0)" class="nav-link">
                                 <img src="{{ asset('main/image/icon-idiomas.png') }}" width="20px" alt="Idiomas">
