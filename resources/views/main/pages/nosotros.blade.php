@@ -120,7 +120,7 @@
                         .items-wrapper {
                             display: flex;
                             position: relative;
-                            width: 560px;
+                            /* width: 560px; */
                             margin: 60px 0 20px 0;
                         }
 
