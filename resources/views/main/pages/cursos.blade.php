@@ -20,6 +20,8 @@
                             class="person">
                     @elseif ($Categoria === 'Cursos')
                         <img src="{{ asset('main/image/cursos_portada.png') }}" alt="Banner Presencial" class="person">
+                    @else
+                        <img src="{{ asset('main/image/bannerpfcweb.png') }}" alt="Banner Principal" class="person">
                     @endif
                 </div>
             </div>
@@ -27,19 +29,19 @@
     </section>
 
 
-    <section id="tus-datos">
+    {{-- <section id="tus-datos">
         <div class="container">
             <p>Déjanos tus datos y te contactaremos
                 <a href="{{ route('contacto') }}">Aquí <img src="{{ asset('main/image/Group_747_orange.png') }}"
                         alt="Arrow" width="10"></a>
             </p>
         </div>
-    </section>
+    </section> --}}
 
     <section id="carrera-informacion">
         <div class="container" style="gap: 1rem;">
             <div>
-                <h3>
+                <h3 style="color: #002b6a;">
                     @if (isset($Categoria) && !empty($Categoria))
                         Nuestros {{ $Categoria }}
                     @else
@@ -95,7 +97,7 @@
                 </div>
             </div>
             <div>
-                <div class="form-container">
+                <div class="form-container" style="background-color: #002b6a;">
                     <h3>Más información <span style="color:#00c9fa">aquí</span></h3>
                     <p style="text-align: center !important">Déjanos tus datos y te contactaremos</p>
                     <form action="{{ route('registrar') }}" method="POST">

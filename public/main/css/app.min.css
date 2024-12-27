@@ -1131,7 +1131,7 @@ main #desarolla-habilidades .info-content .items-goals .items-goals-list .item:l
 }
 
 main #desarolla-habilidades .info-content .items-goals .items-goals-list .item .item-icon {
-    /* background-color: #ffffff; */
+    background-color: #ffffff;
     border-radius: 50px;
     padding: 5px;
     width: 40px;
@@ -1144,8 +1144,8 @@ main #desarolla-habilidades .info-content .items-goals .items-goals-list .item .
 }
 
 main #desarolla-habilidades .info-content .items-goals .items-goals-list .item .item-icon img {
-    /*  width: 35px; */
-    width: 80px;
+     width: 35px;
+    /* width: 80px; */
     object-fit: contain
 }
 
@@ -1251,7 +1251,7 @@ main #oportunidades .info-content .item ul {
 
 main #oportunidades .info-content .item ul li {
     position: relative;
-    text-align: justify;
+    /* text-align: justify; */
     padding-left: 20px;
     margin-bottom: 15px;
     color: #ffffff;
