@@ -195,10 +195,11 @@
                 <div class="info-content">
                     <div class="info-content-text">
                         <div>
-                            <h3>Conoce más sobre <br> la carrera</h3>
-                        </div>
+                            <h3 style="color:#0746b3">Plan de <span class="highlight"
+                                    style="background: #0746b3 !important;color:white !important">estudio</span></h3>
+                        </div><br>
                         <div>
-                            <a href="{{ asset($Model->brochure) }}" download>Temario <img
+                            <a href="{{ asset($Model->brochure) }}" download>Descargar aquí <img
                                     src="{{ asset('main/image/Group_747_down.png') }}" width="20"
                                     alt="Down"></a>
                         </div>

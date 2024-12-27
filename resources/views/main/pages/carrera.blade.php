@@ -169,13 +169,13 @@
                         }
                     </style>
                     <div class="items">
-                        @foreach ($Model->habilidades as $item)
+                        {{-- era habilidades --}}
+                        @foreach ($Model->beneficios as $item)
                             <div class="item">
-                                <img src="{{ asset('main/image/escudoAzul.png') }}" class="security" alt="Escudo"
-                                    width="60">
+                                <img src="{{ asset($item->imagen) }}" class="security" alt="Escudo" width="80">
                                 <div>
                                     <h6>{{ $item->nombre }}</h6>
-                                    <p>{{ $item->descripcion }}</p>
+                                    {{-- <p>{{ $item->descripcion }}</p> --}}
                                 </div>
                             </div>
                         @endforeach
