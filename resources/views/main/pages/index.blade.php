@@ -33,6 +33,7 @@
         <div class="container">
             <div class="info-text">
                 <h3>Áreas de Formación <br>Academica</h3>
+                <div class="linea"></div>
                 <p> Formación Integral y Especializada para un Futuro Brillante.
                     Explora las diversas especialidades que ofrecemos, diseñadas para potenciar tu desarrollo
                     profesional y personal.</p>
@@ -59,7 +60,7 @@
         <div class="container">
             <div class="info-content">
                 <div class="info-text">
-                    <h3>Compromiso con <br> la Excelencia</h3>
+                    <h3>Compromiso con <br> la <span class="highlight">Excelencia</span></h3>
                     <div class="linea"></div>
                     <p style="text-align: justify;">
                         Nuestra institución se destaca por su tradición de calidad, combinando experiencia,
@@ -79,7 +80,7 @@
             </div>
             <div class="info-content-pilar">
                 <div class="info-text">
-                    <h3>Nuestros Pilares Institucionales</h3>
+                    <h3>Nuestros Pilares <span class="highlight">Institucionales</span></h3>
                     <div class="linea"></div>
                 </div>
                 <div class="info-grid-pilar">
@@ -137,14 +138,25 @@
     @endif
 
     @if (count($Testimonios) > 0)
-        <section id="experiencias-testimonios">
+        <section id="experiencias-testimonios"
+            style="
+        z-index: 5;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(to right, transparent 49px, #CCC 50px), linear-gradient(to bottom, transparent 49px, #CCC 50px);
+        background-size: 50px 50px;
+        background-position: 0 0, 0 0;
+        border: 1px solid rgb(228, 228, 228)">
             <div class="info-content">
                 <div class="container">
                     <div class="info-content-info">
                         <h3 style="color: white;">Experiencias que <br>forjan el futuro</h3>
                         <div class="linea-izquierda" style="margin-top: -20px;"></div>
                         <br>
-                        <p style="text-align: justify;
+                        <p
+                            style="text-align: justify;
                         font-family: 'poppins-Regular';
                         font-size: 14px;
                         color: #0746b3;">
@@ -179,11 +191,7 @@
     @endif
 
     @if (count($Novedades) > 0)
-        <section id="actualidad-loayza"
-            style="background-image: url(https://www.ial.edu.pe/web_loayza/assets/img/imgactualizado/puntosfondo.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;">
+        <section id="actualidad-loayza">
             <div class="container">
                 <div class="info-text">
                     <h3>Nuestras Novedades</h3>
@@ -222,7 +230,7 @@
         </section>
     @endif
 
-    <section id="centro-estudio">
+    <section id="centro-estudio" style="background: #0746b308">
         <div class="container">
             <div class="info-text">
                 <h3>Encuentra tu centro de estudio</h3>

@@ -236,7 +236,7 @@
                 style="position: absolute; left: -225px; top: 50%; transform: translateY(-50%); font-size: 14px; background-color: #40c351; padding: 8px 12px; border-radius: 15px 15px 0 15px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
                 <span class="typing-effect"
                     style="font-family: 'GothamRoundedLight'; font-size: 16px; color: #ffffff;"><i
-                        class="fa fa-comment"></i> <i class="fa fa-comment-alt"></i> ¿Podemos ayudarte?</span>
+                        class="fa fa-commenting"></i> <i class="fa fa-comment-alt"></i> ¿Podemos ayudarte?</span>
             </div>
             <a href="https://api.whatsapp.com/send?phone={{ $Configuration->whatsapp }}&text=%C2%A1Hola!%20Quisiera%20más%20información."
                 target="_blank">

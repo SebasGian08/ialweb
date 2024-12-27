@@ -240,8 +240,6 @@
             </div>
         </section>
     @endif --}}
-
-
     @if ($Model->brochure != null)
         <section id="brochure">
             <div class="container">
