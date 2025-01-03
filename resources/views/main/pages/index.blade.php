@@ -324,7 +324,7 @@
             <div class="content-container">
                 <!-- Contenedor de la imagen -->
                 <div class="image-container">
-                    <img src="https://www.ial.edu.pe/web_loayza/assets/img/imgactualizado/formloayza.webp" alt=""
+                    <img src="{{ asset('main/image/post.png') }}" alt=""
                         style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <!-- Contenedor del formulario -->
