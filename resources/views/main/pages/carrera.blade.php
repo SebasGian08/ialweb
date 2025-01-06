@@ -21,12 +21,56 @@
 
     <section id="tus-datos">
         <div class="container">
-            <p>Déjanos tus datos y te contactaremos
-                <a href="{{ route('contacto') }}">Aquí <img src="{{ asset('main/image/Group_747_orange.png') }}"
-                        alt="Arrow" width="10"></a>
-            </p>
+            <div class="two-columns">
+                <div class="col">
+                    <h1 style="font-family: GothamRoundedMedium; color: #00c9fa;">GRADO ACADÉMICO</h1>
+                    <p>Bachiller Técnico en <?php echo $Model->nombre; ?></p>
+                </div>
+                <div class="col">
+                    <h1 style="font-family: GothamRoundedMedium; color: #00c9fa;">TÍTULO</h1>
+                    <p>Bachiller Técnico en <?php echo $Model->nombre; ?> a nombre de la nación</p>
+                </div>
+            </div>
         </div>
+    
+        <style>
+            .two-columns {
+                display: flex;
+                justify-content: space-between;
+            }
+    
+            .two-columns .col {
+                flex: 0 0 48%;
+                padding: 0 10px;
+                opacity: 0; /* Comienza invisible */
+                transform: translateY(20px); /* Comienza desplazada hacia abajo */
+                animation: fadeInUp 1s ease forwards; /* Aplica la animación */
+            }
+    
+            .two-columns .col:first-child {
+                border-right: 2px solid #ccc;
+            }
+    
+            /* Animación personalizada */
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+    
+            /* Añadimos un pequeño retraso a la segunda columna para que se vea más dinámico */
+            .two-columns .col:nth-child(2) {
+                animation-delay: 0.3s;
+            }
+        </style>
     </section>
+    
+    
 
     <section id="carrera-informacion">
         <div class="container">
