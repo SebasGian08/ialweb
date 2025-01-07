@@ -124,7 +124,7 @@
                                     </div>
                                     <div class="info-item-info">
                                         <h6>Modalidad</h6>
-                                        <p>{{ implode(', ', $Model->modalidad) }}</p>
+                                        <p>100% {{ implode(', ', $Model->modalidad) }}</p>
                                     </div>
                                 </div>
                             @endif
