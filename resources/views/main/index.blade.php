@@ -145,7 +145,7 @@
                 <li><a href="{{ route('index') }}"
                         class="{{ $_SERVER['REQUEST_URI'] == '/' ? 'active' : '' }}">Inicio</a></li>
                 <li><a href="{{ route('nosotros') }}"
-                        class="{{ $_SERVER['REQUEST_URI'] == '/sobre-nosotros' ? 'active' : '' }}">Sobre nosotros</a>
+                        class="{{ $_SERVER['REQUEST_URI'] == '/sobre-nosotros' ? 'active' : '' }}">Nosotros</a>
                 </li>
                 <li class="submenu">
                     <a href="javascript:void(0)" class="nav-link">Estudia en Arzobispo Loayza <i
@@ -293,7 +293,7 @@
             <div class="contact-content">
                 <div class="contact-content-info">
                     <div class="footer-navigation">
-                        <h5>Sobre Nosotros</h5>
+                        <h5>Nosotros</h5>
                         <div class="linea-izquierda"></div>
                         <ul>
                             <li><a href="{{ route('nosotros') }}">>> Nosotros</a></li>
