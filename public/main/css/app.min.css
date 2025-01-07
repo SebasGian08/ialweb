@@ -1083,17 +1083,7 @@ main #desarolla-habilidades .info-content .items .item img.security {
     right: 100px;
 }
 
-/* añadido */
-.security {
-    transition: transform 0.3s ease;
-}
 
-.security:hover {
-    transform: scale(1.2);
-    /* Esto hace el zoom */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Sombra para hacerlo más llamativo */
-}/* fin */
 
 main #desarolla-habilidades .info-content .items-goals h5 {
     font-size: 26px;

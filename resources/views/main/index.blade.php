@@ -134,7 +134,7 @@
                     </nav>
                 </div>
                 <a href="{{ route('contacto') }}" class="button-action">
-                    Matriculate
+                    Matricúlate
                     <img src="{{ asset('main/image/Group_747_white.png') }}" width="10" alt="Arrow">
                 </a>
             </div>

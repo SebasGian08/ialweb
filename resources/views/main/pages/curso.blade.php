@@ -68,7 +68,7 @@
                                         <img src="{{ asset('main/image/nochedia.png') }}" alt="" width="50">
                                     </div>
                                     <div class="info-item-info">
-                                        <h6>Turno</h6>
+                                        <h6>Creditos</h6>
                                         <p>{{ implode(', ', $Model->turno) }}</p>
                                     </div>
                                 </div>
