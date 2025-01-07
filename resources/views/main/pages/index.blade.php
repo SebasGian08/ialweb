@@ -39,7 +39,7 @@
                     profesional y personal.</p>
                 <ul>
                     <li><a href="{{ route('cursos') }}">Formación continua</a></li>
-                    <li><a href="#" class="active">Programas</a></li>
+                    <li><a href="#" class="active">Carreras</a></li>
                     <li><a href="{{ route('idioma', ['slug' => 'idioma']) }}">Idiomas</a></li>
                 </ul>
             </div>
