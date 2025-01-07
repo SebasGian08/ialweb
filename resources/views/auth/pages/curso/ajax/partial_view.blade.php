@@ -77,13 +77,17 @@
                                             <label for="turno" class="form-label col-form-label">Turnos:</label>
                                             <select name="turno[]" id="turno" class="form-control" style="width: 100% !important;" multiple="multiple">
                                                 <option value="">Ninguno</option>
-                                                <option value="01" {{ $Model != null && $Model->turno != null && in_array('Mañana', $Model->turno) ? 'selected' : '' }}>01</option>
-                                                <option value="02" {{ $Model != null && $Model->turno != null && in_array('Tarde', $Model->turno) ? 'selected' : '' }}>02</option>
-                                                <option value="03" {{ $Model != null && $Model->turno != null && in_array('Noche', $Model->turno) ? 'selected' : '' }}>03</option>
-                                                <option value="04" {{ $Model != null && $Model->turno != null && in_array('Noche', $Model->turno) ? 'selected' : '' }}>04</option>
-                                                <option value="05" {{ $Model != null && $Model->turno != null && in_array('Noche', $Model->turno) ? 'selected' : '' }}>05</option>
-                                                <option value="06" {{ $Model != null && $Model->turno != null && in_array('Noche', $Model->turno) ? 'selected' : '' }}>06</option>
-                                                <option value="07" {{ $Model != null && $Model->turno != null && in_array('Noche', $Model->turno) ? 'selected' : '' }}>07</option>
+                                                <option value="01" {{ $Model != null && $Model->turno != null && in_array('01', $Model->turno) ? 'selected' : '' }}>01</option>
+                                                <option value="02" {{ $Model != null && $Model->turno != null && in_array('02', $Model->turno) ? 'selected' : '' }}>02</option>
+                                                <option value="03" {{ $Model != null && $Model->turno != null && in_array('03', $Model->turno) ? 'selected' : '' }}>03</option>
+                                                <option value="04" {{ $Model != null && $Model->turno != null && in_array('04', $Model->turno) ? 'selected' : '' }}>04</option>
+                                                <option value="05" {{ $Model != null && $Model->turno != null && in_array('05', $Model->turno) ? 'selected' : '' }}>05</option>
+                                                <option value="06" {{ $Model != null && $Model->turno != null && in_array('06', $Model->turno) ? 'selected' : '' }}>06</option>
+                                                <option value="07" {{ $Model != null && $Model->turno != null && in_array('07', $Model->turno) ? 'selected' : '' }}>07</option>
+                                                <option value="08" {{ $Model != null && $Model->turno != null && in_array('08', $Model->turno) ? 'selected' : '' }}>08</option>
+                                                <option value="09" {{ $Model != null && $Model->turno != null && in_array('09', $Model->turno) ? 'selected' : '' }}>09</option>
+                                                <option value="10" {{ $Model != null && $Model->turno != null && in_array('10', $Model->turno) ? 'selected' : '' }}>10</option>
+                                                <option value="11" {{ $Model != null && $Model->turno != null && in_array('11', $Model->turno) ? 'selected' : '' }}>11</option>
                                             </select>
                                             <span data-valmsg-for="turno"></span>
                                         </div>
