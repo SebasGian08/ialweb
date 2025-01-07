@@ -65,7 +65,7 @@
                             @if ($Model->turno != null)
                                 <div class="info-item">
                                     <div class="info-item-image">
-                                        <img src="{{ asset('main/image/nochedia.png') }}" alt="" width="50">
+                                        <img src="{{ asset('main/image/credito.png') }}" alt="" width="50">
                                     </div>
                                     <div class="info-item-info">
                                         <h6>Creditos</h6>

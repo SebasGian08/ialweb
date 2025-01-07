@@ -74,7 +74,7 @@
                                             <span data-valmsg-for="duracion"></span>
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="turno" class="form-label col-form-label">Turnos:</label>
+                                            <label for="turno" class="form-label col-form-label">Creditos:</label>
                                             <select name="turno[]" id="turno" class="form-control" style="width: 100% !important;" multiple="multiple">
                                                 <option value="">Ninguno</option>
                                                 <option value="01" {{ $Model != null && $Model->turno != null && in_array('01', $Model->turno) ? 'selected' : '' }}>01</option>
